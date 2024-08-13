@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
+    <meta name="description" content="Jack Tallis's portfolio showcasing experience in cybersecurity, forensic investigation, and programming projects." />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
@@ -20,223 +21,133 @@
         </ul>
       </div>
     </nav>
+
     <nav id="hamburger-nav">
       <div class="logo">Jack Tallis</div>
       <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
+        <div class="hamburger-icon" aria-label="Toggle navigation menu" onclick="toggleMenu()">
           <span></span>
           <span></span>
           <span></span>
         </div>
-        <div class="menu-links">
+        <ul class="menu-links" aria-hidden="true">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
+        </ul>
       </div>
     </nav>
+
     <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/Question_mark_(black).svg.png" alt="John Doe profile picture" />
-      </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Jack Tallis</h1>
-        <p class="section__text__p2">Cyber security and forensic investigation student</p>
+        <p class="section__text__p2">Cybersecurity and Forensic Investigation Graduate</p>
         <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/Jack_Tallis_CV_2024.docx-2.pdf')"
-          >
+          <button class="btn btn-color-2" onclick="window.open('./assets/Jack_tallis_Cyber_CV.pdf')">
             Download CV
           </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
             Contact Info
           </button>
         </div>
         <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/jack-tallis-8a9470176/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/JackTallis'"
-          />
+          <img src="./assets/linkedin.png" alt="LinkedIn logo - link to my LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/jack-tallis-8a9470176/'" />
+          <img src="./assets/github.png" alt="GitHub logo - link to my GitHub profile" class="icon" onclick="location.href='https://github.com/JackTallis'" />
         </div>
       </div>
     </section>
+
     <section id="about">
-      <p class="section__text__p1"></p>
       <h1 class="title">About Me</h1>
       <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/Question_mark_(black).svg.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
+        <div class="section__pic-container"></div>
+
         <div class="about-details-container">
           <div class="about-containers">
             <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
+              <img src="./assets/experience.png" alt="Experience icon" class="icon" />
               <h3>Experience</h3>
-              <p> <br /></p>
+              <p>Operational governance and transformation specialist at Vodafone</p>
             </div>
             <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
+              <img src="./assets/education.png" alt="Education icon" class="icon" />
               <h3>Education</h3>
-              <p>B.Sc. Bachelors Degree<br /></p>
+              <p>B.Sc. Bachelor's Degree</p>
             </div>
           </div>
           <div class="text-container">
             <p>
-              I am a final-year Cybersecurity and Forensic Computing student at the University of Portsmouth, where I have acquired a strong foundation in programming, core computing, ethical hacking, and other topics. I am passionate about learning and applying the latest techniques and tools to protect and investigate digital systems and networks.
-
-              I have also gained valuable hands-on experience in the industry, completing a one-month work experience at Vodafone, where I created and presented reports on the Cyber Kill Chain and the espionage groups APT10, APT29, and APT39. I demonstrated my skills in data structures, malware forensics, and cybersecurity, as well as my communication and teamwork abilities. I am eager to put my considerable knowledge to use professionally, and I welcome interactions and talks with industry peers.
+              I am a Cybersecurity and Forensic Computing graduate from the University of Portsmouth with a solid foundation in programming, core computing, and ethical hacking. I gained practical experience during a one-month internship at Vodafone, where I presented reports on the Cyber Kill Chain and APT groups (APT10, APT29, APT39). I am passionate about applying the latest techniques to protect and investigate digital systems and networks and look forward to connecting with industry professionals.
+              Currently, I am working on enhancing my skills in coding and penetration testing with online resources like LeetCode, TryHackMe, and CodeCrafters.
             </p>
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
+      <img src="./assets/arrow.png" alt="Arrow icon to scroll to the next section" class="icon arrow" onclick="location.href='#experience'" />
     </section>
+
     <section id="experience">
-      <p class="section__text__p1"></p>
       <h1 class="title">Experience</h1>
+      <div class="badge-container">
+        <script src="https://tryhackme.com/badge/606641"></script>
+      </div>
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container">
             <h2 class="experience-sub-title">Coding</h2>
             <div class="article-container">
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+                <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" />
                 <div>
                   <h3>HTML</h3>
                   <p>Intermediate</p>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+                <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" />
                 <div>
                   <h3>CSS</h3>
                   <p>Intermediate</p>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+                <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" />
                 <div>
                   <h3>Rust</h3>
-                  <p>beginner</p>
+                  <p>Beginner</p>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+                <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" />
                 <div>
-                  <h3>Java Script</h3>
+                  <h3>JavaScript</h3>
                   <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>TypeScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Material UI</h3>
-                  <p>Intermediate</p>
                 </div>
               </article>
             </div>
           </div>
+
           <div class="details-container">
             <h2 class="experience-sub-title">Development</h2>
             <div class="article-container">
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+                <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" />
                 <div>
                   <h3>SQL</h3>
                   <p>Intermediate</p>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+                <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" />
                 <div>
-                  <h3>Node</h3>
+                  <h3>Node.js</h3>
                   <p>Beginner</p>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>React</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+                <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" />
                 <div>
                   <h3>Git</h3>
                   <p>Intermediate</p>
@@ -246,13 +157,9 @@
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
+      <img src="./assets/arrow.png" alt="Arrow icon to scroll to the next section" class="icon arrow" onclick="location.href='#projects'" />
     </section>
+
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
@@ -260,104 +167,71 @@
         <div class="about-containers">
           <div class="details-container color-container">
             <div class="article-container">
-              <img
-                src="./assets/Question_mark_(black).svg.png"
-                alt="Project 1"
-                class="project-img"
-              />
+              <img src="./assets/Question_mark_(black).svg.png" alt="Placeholder image for Project 1" class="project-img" />
             </div>
             <h2 class="experience-sub-title project-title">Ethical Hacking</h2>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/JackTallis'"
-              >
-                Github
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/JackTallis'">
+                View on GitHub
               </button>
             </div>
           </div>
           <div class="details-container color-container">
             <div class="article-container">
-              <img
-                src="./assets/Question_mark_(black).svg.png"
-                alt="Project 2"
-                class="project-img"
-              />
+              <img src="./assets/Question_mark_(black).svg.png" alt="Placeholder image for Project 2" class="project-img" />
             </div>
             <h2 class="experience-sub-title project-title">Malware Forensics</h2>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/JackTallis'"
-              >
-                Github
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/JackTallis'">
+                View on GitHub
               </button>
             </div>
           </div>
           <div class="details-container color-container">
             <div class="article-container">
-              <img
-                src="./assets/Question_mark_(black).svg.png"
-                alt="Project 3"
-                class="project-img"
-              />
+              <img src="./assets/Question_mark_(black).svg.png" alt="Placeholder image for Project 3" class="project-img" />
             </div>
             <h2 class="experience-sub-title project-title">Block Provenance</h2>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/JackTallis'"
-              >
-                Github
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/JackTallis'">
+                View on GitHub
               </button>
             </div>
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-      <section> <p> There are more projects on Github</p></section>
-
+      <img src="./assets/arrow.png" alt="Arrow icon to scroll to the next section" class="icon arrow" onclick="location.href='#contact'" />
     </section>
+
     <section id="contact">
-      <p class="section__text__p1"></p>
+      <p class="section__text__p1">Let's Get in Touch</p>
       <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:examplemail@gmail.com">newemail@work.org</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/jack-tallis-8a9470176/">LinkedIn</a></p>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h3>Email</h3>
+            <p>JackTallis@outlook.com</p>
+          </div>
+          <div class="details-container">
+            <h3>Phone</h3>
+            <p>07460 786581</p>
+          </div>
+          <div class="details-container">
+            <h3>LinkedIn</h3>
+            <p>
+              <a href="https://www.linkedin.com/in/jack-tallis-8a9470176/" target="_blank" rel="noopener noreferrer">
+                View my LinkedIn profile
+              </a>
+            </p>
+          </div>
         </div>
       </div>
     </section>
+
     <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169; 2023 Jack Tallis. All Rights Reserved.</p>
+      <p>&copy; 2024 Jack Tallis. All rights reserved.</p>
     </footer>
+
     <script src="script.js"></script>
   </body>
 </html>
