@@ -353,6 +353,12 @@ article .icon {
   cursor: default;
 }
 
+.badge-container {
+  margin-top: 20px; /* Adjust the margin as needed */
+  text-align: right; /* Center the badge */
+}
+
+
 /* PROJECTS SECTION */
 
 #projects {
